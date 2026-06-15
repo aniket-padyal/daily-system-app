@@ -1,57 +1,16 @@
-# Daily System Tracker
+# React + Vite
 
-A simple and responsive productivity tracker built with **HTML, CSS, and JavaScript** to help maintain consistency and focus on daily habits.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Features
+Currently, two official plugins are available:
 
-* 📅 **Automatic Date & Day Update**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-  * Displays the current date and day dynamically whenever the page loads.
+## React Compiler
 
-* 📝 **Daily Reflection Section**
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-  * Includes **3 reflection input fields** for recording:
+## Expanding the ESLint configuration
 
-    * Daily wins
-    * Lessons learned
-    * Improvements for tomorrow
-
-* 📱 **Responsive Design**
-
-  * Optimized for desktop, tablet, and mobile devices.
-
-* 🎨 **Simple & Clean UI**
-
-  * Minimal design focused on usability and distraction-free tracking.
-
-* ⚡ **Lightweight & Fast**
-
-  * Built using only HTML, CSS, and JavaScript with no external dependencies.
-
-## 🎯 Purpose
-
-The goal of this project is to encourage building **daily systems and habits** rather than relying solely on goals. Consistent small actions tracked every day can lead to long-term growth and improvement.
-
-## 🛠️ Technologies Used
-
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-
-## 📂 Project Structure
-
-```system-app
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
-## 💡 Future Improvements
-
-* Save reflections using Local Storage
-* Dark/Light mode toggle
-* Habit completion statistics
-* Weekly and monthly review sections
-* Progress tracking dashboard
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

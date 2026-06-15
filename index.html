@@ -1,80 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="configuration.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily System Tracker</title>
-  <link rel="icon" type="image/svg+xml" href="./configuration.png" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" /> -->
-  <link rel="stylesheet" href="style.css">
+  <title>daily-system-app</title>
 </head>
 
 <body>
-  <div class="container">
-
-    <div class="header">
-      <div class="header-left">
-        <div class="day-name" id="day-name">—</div>
-        <div class="date-full" id="date-full">—</div>
-      </div>
-      <div class="streak-block" id="streak-block">
-        <div class="streak-num" id="streak-num">0</div>
-        <div class="streak-label">day streak</div>
-      </div>
-    </div>
-
-    <div class="rule-banner">
-      Waking up late shrinks the day &mdash; it never cancels it. Same 5 anchors, just shifted forward.
-    </div>
-
-    <div class="progress-row">
-      <span>Today's progress</span>
-      <span id="progress-label">0 / 5</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
-    </div>
-
-    <label class="late-row" onclick="toggleLate()">
-      <div class="toggle" id="late-toggle">
-        <div class="toggle-thumb"></div>
-      </div>
-      <span>I woke up late today</span>
-    </label>
-    <div class="late-note" id="late-note">
-      Gym becomes 15 min home workout. Everything shifts forward. Start from anchor 1 right now.
-    </div>
-
-    <div class="anchor-list" id="anchor-list"></div>
-
-    <div class="complete-banner" id="complete-banner">
-      <p>All 5 anchors done.</p>
-      <span>Write your reflection below and close the day.</span>
-    </div>
-
-    <div class="reflection-card">
-      <div class="reflection-title">
-        <i class="ti ti-pencil" aria-hidden="true"></i> 3-line reflection
-      </div>
-      <div class="ref-field">
-        <textarea id="ref-did" placeholder="What I did today..."></textarea>
-        <textarea id="ref-skip" placeholder="What I skipped..."></textarea>
-        <textarea id="ref-tmr" placeholder="One thing to improve tomorrow..."></textarea>
-      </div>
-    </div>
-
-    <button class="save-btn" onclick="saveReflection()">Save today's reflection</button>
-    <div class="saved-msg" id="saved-msg">Saved.</div>
-
-    <!-- <div class="history-section">
-    <div class="history-title">Last 28 days</div>
-    <div class="history-grid" id="history-grid"></div>
-  </div> -->
-
-  </div>
-
-  <script src="script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
